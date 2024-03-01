@@ -1,0 +1,27 @@
+{
+  "articles": [
+    {
+      "title": "title",
+      "slug": "slug",
+      "category": "category",
+      "publish": true,
+      "date": "2024-03-01"
+    },
+    {
+      "title": "title",
+      "slug": "slug",
+      "category": "category",
+      "publish": true,
+      "date": "2024-03-01"
+    }
+  ],
+  "slides": [
+    {
+      "title": "title",
+      "slug": "slug",
+      "category": "category",
+      "publish": true,
+      "date": "2024-03-01"
+    }
+  ]
+}

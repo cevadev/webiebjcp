@@ -1,0 +1,20 @@
+{
+  "name": "Iglesia Evangélica Bautista José C. Paz",
+  "short_name": "IEBJCP",
+  "description": "Hola, somos la iglesia Evangélica bautista José C. Paz... Bienvenido, que Dios te bendiga siempre.",
+  "background_color": "#f9fafb",
+  "theme_color": "#3850a0",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": "./",
+  "scope": "./",
+  "lang": "es",
+  "icons": [
+    {
+      "src": "./img/favicon.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ]
+}
