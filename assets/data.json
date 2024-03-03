@@ -23,5 +23,43 @@
       "publish": true,
       "date": "2024-03-01"
     }
+  ],
+  "ministerios": [
+    {
+      "name": "Educacion cristiana",
+      "excerpt": "Sirviendo a la iglesia con una sana doctrina basada en la palabra de Dios. Tiene a cargo todas las clases para las distintas edades de escuelas bíblica",
+      "img": "img/ministerios/wondershare.svg",
+      "director": "Hna. Graciela Latrónico"
+    },
+    {
+      "name": "Evangelismo",
+      "excerpt": "Promueve el mandato que nos dejó el Señor Jesús <i>Por tanto, id, y haced discipulos a todas las naciones, bautizándolos en el nombre del Padre, y del Hijo, y del Espíritu Santo; enseñándoles que guarden todas las cosas que os he mandado; y he aquí Yo estoy con vosotros todos los días, hasta el fin del mundo. Amén. Mateo 28:19-20</i>",
+      "img": "img/ministerios/wondershare.svg",
+      "director": "Hno. Carlos Villanueva"
+    },
+    {
+      "name": "Adoración",
+      "excerpt": "Coordina la musica dominical, dirección de culto y la educación musical para nuestra congregación. Buscando una adoración en Espíritu y Verdad.",
+      "img": "img/ministerios/wondershare.svg",
+      "director": "Hno. Sergio Ibañez"
+    },
+    {
+      "name": "Acción Comunitaria",
+      "excerpt": "Nuestra evangelización no solo es de palabra, buscamos ayudar socialmente a los necesitados eficientemente. Tomamos como referencia el ejemplo de Cristo ante los necesitados, en solidaridad, amor y sensibilidad",
+      "img": "img/ministerios/wondershare.svg",
+      "director": "Hna. Margarita Bauer"
+    },
+    {
+      "name": "Compañerismo",
+      "excerpt": "Promueve el amor entre nosotros, sirviendo a la iglesia en los momentos sociales, coordinando el buffet para cada actividad especial de nuestra congregación",
+      "img": "img/ministerios/wondershare.svg",
+      "director": "Hno. Miguel Escudero"
+    },
+    {
+      "name": "Intendencia",
+      "excerpt": "Promueve el amor entre nosotros, sirviendo a la iglesia en los momentos sociales, coordinando el buffet para cada actividad especial de nuestra congregación",
+      "img": "img/ministerios/wondershare.svg",
+      "director": "Hna. Verónica R."
+    }
   ]
 }

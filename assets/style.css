@@ -722,6 +722,59 @@ summary > * {
   }
 }
 
+/* ******************** CardList ******************** */
+
+.card-list {
+  border: thin solid transparent;
+  border-bottom-color: var(--border-color);
+  display: block;
+  font-size: var(--step-0);
+  font-weight: 900;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.card-list:hover {
+  color: var(--text-color);
+  background-color: var(--border-color);
+}
+
+.card-list figure {
+  padding: calc(var(--step-0) * 0.5);
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.card-list figcaption {
+  margin-left: var(--step-2);
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-list img {
+  width: var(--step-5);
+  height: var(--step-5);
+}
+
+.card-list span,
+.card-list small {
+  width: 100%;
+}
+
+.card-list small {
+  font-weight: 400;
+}
+
+@media screen and (min-width: 48em) {
+  .card-list figure {
+    align-items: center;
+  }
+}
+
 /* ******************** Home Page ******************** */
 
 .home {
@@ -880,5 +933,84 @@ summary > * {
 
   .social-media > * {
     width: 33%;
+  }
+}
+
+/* ******************** Print ******************** */
+.just-print {
+  display: none;
+}
+
+@media print {
+  @page {
+    size: A4;
+  }
+
+  li.just-print {
+    display: list-item;
+  }
+
+  .just-print {
+    display: block;
+  }
+
+  .no-print {
+    display: none;
+  }
+
+  .page-break {
+    page-break-before: always;
+  }
+
+  .print-left {
+    text-align: left;
+  }
+
+  body {
+    color: #000;
+    background-color: #fff;
+  }
+
+  .header,
+  .footer {
+    display: none;
+  }
+
+  .nosotros h1 {
+    font-size: 24pt;
+  }
+
+  .nosotros h2 {
+    font-size: 16pt;
+  }
+
+  .nosotros h3 {
+    font-size: 12pt;
+  }
+
+  .nosotros li,
+  .nosotros p,
+  .nosotros .step-1,
+  .card-list {
+    font-size: 8pt;
+  }
+
+  .nosotros hr {
+    display: none;
+  }
+
+  .nosotros {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .nosotros img {
+    max-width: 150px;
+  }
+
+  .card-list img {
+    width: var(--step-1);
+    height: var(--step-1);
   }
 }
