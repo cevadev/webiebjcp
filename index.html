@@ -13,17 +13,45 @@
   <link rel="stylesheet" href="./assets/style.css">
 </head>
 
-<body>
-  <main class="home">
+<body class="light">
+  <sergey-import src="components/header" />
+  <main>
     <section class="container-sm">
-      <sergey-import src="components/header" />
-      <h1 class="home-title">
-        <span class="slide-up-fade-in delay-4">Hola, </span>
-        <span class="slide-up-fade-in delay-6">somos la iglesia</span>
-        <span class="slide-up-fade-in delay-8">Evangélica bautista José C. Paz</span>
-        <span class="zoom-out-fade-in delay-10">Bienvenido, que Dios te bendiga siempre.</span>
+      <h1 class="text-sm-center title-border display-6">
+        <span class="d-sm-block">Hola, ¡Dios te bendiga!</span>
+        <span class="d-sm-block font-logo-black text-primary text-gradient-primary">Bienvenido a nuestra Iglesia
+          Evangélica Bautista José C. Paz.</span>
       </h1>
-      <img class="home-avatar zoom-out-fade-in delay-12" src="img/home.jpg" alt="culto">
+      <div class="row">
+        <article class="col-sm-12 col-lg-9 order-lg-first">
+          <p>
+            <strong>Nos alegra que estés aquí</strong>. Somos una comunidad de creyentes que amamos a Dios y deseamos
+            seguir fielmente al Señor Jesucristo. En nuestra iglesia, nos
+            basamos en la Biblia como la única autoridad infalible para nuestra fe y práctica.
+          </p>
+          <p>
+            <strong>Nos reunimos regularmente para adorar a Dios juntos, estudiar Su Palabra y crecer en nuestra
+              relación con Él.</strong> También anhelamos servir a nuestra comunidad y compartir el mensaje de esperanza
+            y redención que encontramos en el
+            Evangelio.
+          </p>
+          <p>
+            Si estás buscando un lugar donde puedas aprender más sobre Dios, encontrar una comunidad de apoyo y crecer
+            en tu fe, te
+            invitamos a que nos visites. <strong>¡Siempre serás bienvenido!</strong>
+          </p>
+
+        </article>
+        <!-- <h1 class="home-title">
+          <span class="slide-up-fade-in delay-4">Hola, </span>
+          <span class="slide-up-fade-in delay-6">somos la iglesia</span>
+          <span class="slide-up-fade-in delay-8">Evangélica bautista José C. Paz</span>
+          <span class="zoom-out-fade-in delay-10">Bienvenido, que Dios te bendiga siempre.</span>
+        </h1> -->
+        <article class="col-sm-12 text-sm-center col-lg-3">
+          <img class="mx-sm-auto avatar" src="img/home.jpg" alt="culto">
+        </article>
+      </div>
       <aside class="my-sm-5 mx-sm-auto w-lg-80">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/RP70vWkXkpE?si=tpgAgehCaR8KGtQx"
           title="YouTube video player" frameborder="0"

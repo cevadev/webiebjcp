@@ -111,12 +111,20 @@
   --container-md: 62em;
   --container-lg: 75em;
 
+  --main-top: 2rem;
+  --main-bottom: 2rem;
+
   /*
     MediaQueries
       768px - 48em
       992px - 62em
       1200px - 75em
   */
+  --gradient-primary: linear-gradient(
+    45deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
 }
 
 /* ******************** User Prefers ******************** */
@@ -551,6 +559,24 @@ summary > * {
   text-align: right;
 }
 
+.avatar {
+  border-radius: 50%;
+  width: 13rem;
+  height: 13rem;
+}
+
+.text-gradient-primary {
+  background-image: var(--gradient-primary);
+  -ms-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -ms-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+}
+
 /* ******************** Animations ******************** */
 @keyframes pulse {
   0% {
@@ -685,13 +711,18 @@ summary > * {
   animation: pulse 1.5s linear infinite;
 }
 
+main {
+  margin-top: var(--main-top);
+  margin-bottom: calc(2 * var(--main-bottom));
+}
+
 @media screen and (min-width: 48em) {
-  .header {
+  /* .header {
     position: fixed;
     top: 0;
     left: 0;
     z-index: 999;
-  }
+  } */
 
   .header-container {
     margin-right: auto;
@@ -719,6 +750,46 @@ summary > * {
   .icons a,
   .icons button {
     margin: 0 var(--step--2);
+  }
+}
+
+@media screen and (min-width: 62em) {
+  .header {
+    position: sticky;
+    top: 0;
+    border-top: 0;
+    border-bottom: thin solid var(--color-contrast);
+  }
+
+  .header-container {
+    padding: 0 1rem;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    width: auto;
+  }
+
+  .alias {
+    display: block;
+  }
+
+  .menu,
+  .icons {
+    width: auto;
+    justify-content: space-evenly;
+  }
+
+  .menu a,
+  .icons a,
+  .icons button {
+    margin: 0 var(--step--2);
+  }
+
+  main {
+    margin-bottom: 0;
   }
 }
 
@@ -917,6 +988,10 @@ summary > * {
   .e-404 {
     transform: rotate(-9deg);
   } */
+
+  main {
+    margin-bottom: 0;
+  }
 
   .home-title span {
     font-size: var(--step-4);
