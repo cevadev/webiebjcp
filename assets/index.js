@@ -1,4 +1,15 @@
 (async function (d) {
+  //Fecha formato humano
+  function humanDate(date) {
+    return new Date(`${date}T00:00:00`)
+      .toDateString()
+      .slice(4)
+      .replace("Jan", "Ene")
+      .replace("Apr", "Abr")
+      .replace("Aug", "Ago")
+      .replace("Dec", "Dic");
+  }
+
   /** Fuente de datos para el Sitio Web */
   async function getData() {
     let response = await fetch("assets/data.json");
@@ -27,5 +38,25 @@
         `)
     );
     d.getElementById("ministerios").innerHTML = $ministerios;
+  }
+
+  //vlogs
+  if (d.getElementById("vlogs")) {
+    const vlogs = data.vlogs.filter((el) => el.publish === true);
+    let $vlogs = "";
+    vlogs.forEach(
+      (el) =>
+        ($vlogs += `
+          <a href="${el.url}" class="blog-item external" target="_blank">
+            <figure>
+              <img src="img/category/${el.category}.svg" alt="${el.category}" title="Categoría: ${el.category}" loading="lazy">
+              <figcaption>
+                <span>${el.title}</span>
+              </figcaption>
+            </figure>
+          </a>
+      `)
+    );
+    d.getElementById("vlogs").insertAdjacentHTML("beforeend", $vlogs);
   }
 })(document);
