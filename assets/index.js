@@ -59,4 +59,21 @@
     );
     d.getElementById("vlogs").insertAdjacentHTML("beforeend", $vlogs);
   }
+
+  //Entorno local vs producción
+  if (location.host !== "bautistajosecpaz.com") {
+    d.querySelectorAll(".menu a").forEach((el) =>
+      el.setAttribute("href", `${el.href}.html`)
+    );
+    d.querySelectorAll(".footer-menu a:not([title='inicio'])").forEach((el) =>
+      el.setAttribute("href", `${el.href}.html`)
+    );
+    d.querySelectorAll(".blog-item:not(.external)").forEach((el) =>
+      el.setAttribute("href", `${el.href}.html`)
+    );
+  } else {
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("./sw.js");
+    }
+  }
 })(document);

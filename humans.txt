@@ -1,0 +1,26 @@
+/* iebjcp - http://www.bautistajosecpaz.com/ */
+
+
+
+/* TEAM */
+Design & Develop: IEBJCP
+Contact: hola [at] bautistajosecpaz.com
+Twitter: 
+Location: BSAS, Argentina
+
+
+
+/* RESOURCES */
+- www.bautistas.org.ar
+- www.ibonce.org.ar
+- www.bautistaderamos.com.ar
+- www.iebflores.com.ar
+
+
+
+/* INSPIRATION */
+- https://jeffhuang.com/designed_to_last/
+- https://ethanmarcotte.com/
+- https://www.taniarascia.com/
+- https://www.oddbird.net/susy/
+- https://dejan.works/

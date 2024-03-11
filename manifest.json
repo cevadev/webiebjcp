@@ -11,9 +11,9 @@
   "lang": "es",
   "icons": [
     {
-      "src": "./img/favicon.png",
-      "type": "image/png",
-      "sizes": "512x512",
+      "src": "./img/iebjcp_ico.jpg",
+      "type": "image/jpg",
+      "sizes": "176x176",
       "purpose": "any maskable"
     }
   ]
